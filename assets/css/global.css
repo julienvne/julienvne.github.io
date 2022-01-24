@@ -18,10 +18,11 @@ input, button, textarea, select { font: inherit }
 
 body { 
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
 }
 
 h1 {
+    font-family: 'Shadows Into Light'; 
     font-size: 78px;
     font-weight: normal;
     letter-spacing: -2px;
@@ -30,21 +31,45 @@ h1 {
 }
 
 h2 {
-    font-size: 42px;
-    letter-spacing: 6px;
-    margin-bottom: 48px;
+    font-family: 'Shadows Into Light';
+    font-size: 30px;
+    /*letter-spacing: 6px;*/
+    margin-bottom: 40px;
     line-height: 1.2;
 }
 
 h3 {
-    font-size: 24px;
+    font-family: 'Shadows Into Light';
+    text-decoration: underline;
+    font-size: 25px;
     margin-top: 48px;
     margin-bottom: 20px;
     line-height: 1.2;
-    text-transform: uppercase;
+    
 }
 
 p {
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    margin-top: 40px;
     margin-bottom: 16px;
+}
+
+li a{
+    font-family: 'Architects Daughter';
+    color: rgb(66, 66, 66);
+    text-decoration: none;
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+li{
+    list-style-type: circle;
+}
+
+img {
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
