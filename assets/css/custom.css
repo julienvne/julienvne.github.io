@@ -2,7 +2,7 @@
 
 :root {
     /* Nicer than default sans-serif font */
-    --sans-serif: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+    /*--sans-serif: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
 
     /* Color variables */
     --black-000: #000;
@@ -179,7 +179,7 @@ body {font-family: 'Kalam', cursive;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 20px;
-	width: 15%;
+	width: 10%;
 	transition-timing-function: ease;
 }
 
@@ -196,7 +196,8 @@ body {font-family: 'Kalam', cursive;
     animation-iteration-count: infinite;
 }
 header {background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
-         font-family: 'Kalam', cursive;}
+    font-family: 'Montserrat', sans-serif;}
+
 header.hero-block h2 { color: var(--gray-900) }
 header.hero-block h1 { color: var(--gray-800) }
 
@@ -213,6 +214,7 @@ header.hero-block a.btn-secondary:hover,
 header.hero-block a.btn-secondary:active { background-color: transparent; }
 
 .title{
+    font-family: 'Kalam', cursive;
     margin-top: 70px;
 }
 
@@ -238,13 +240,19 @@ header.hero-block a.btn-secondary:active { background-color: transparent; }
 
 nav{
     background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
-
+    font-family: 'Montserrat', sans-serif;
 }
 
-.icon{
-    margin-top: 8px;
+.banniere{
+    margin-top: 20px;
     margin-left: 15px;
-    width: 50px;
+    width: 10%;
+    height: 50%;
+
+}
+.banniere img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .top { 
@@ -268,3 +276,11 @@ nav{
 .theme-two .col-3{
     color: white;
 }
+
+/*.coding{
+    position: relative;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+
+}*/

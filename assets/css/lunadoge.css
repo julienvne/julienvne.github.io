@@ -1,3 +1,4 @@
+
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -201,7 +202,7 @@ header.hero-block { background-color: var(--blue-600) }
 /* Desktops */
 @media (min-width: 768px) {
     .hero-block .container-btn a.btn { display: inline-block }
-    .hero-block .container-btn { margin-top: 64px }
+    .hero-block .container-btn { margin-top: 50px }
     .hero-block h1 + .container-btn { margin-top: 120px }
     .hero-block .container-btn a:nth-child(2) { margin-left: 30px }
     .hero-block .container-btn a:nth-child(3) { margin-left: 30px }
@@ -2067,9 +2068,10 @@ footer p.privacy a:hover, footer p.privacy a:active {
     align-items: center;
     height: auto;
     list-style-type: none;
+
 }
 
-.container-menu ul li { 
+.container-menu ul li {
     display: inline-block; 
     list-style-type: none;
     margin-right: 50px;
@@ -2086,20 +2088,20 @@ footer p.privacy a:hover, footer p.privacy a:active {
 .container-menu a:link,
 .container-menu a:visited { 
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
-/*.container-menu a:focus,
+.container-menu a:focus,
 .container-menu a:hover,
 .container-menu a:active { 
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-thickness: 2px;
     text-underline-offset: 7px;
-    color: var(--gray-700);
-    /* transition: all 0.3s linear; 
+    color: var(--black-000);
+     transition: all 0.3s linear; 
     background-color: transparent;
     transition: .35s ease-in-out;
-}*/
+}
 
 /* CTA button */
 .container-menu a#btn-cta {
@@ -2118,17 +2120,17 @@ footer p.privacy a:hover, footer p.privacy a:active {
 
 .container-menu a#btn-cta:link, 
 .container-menu a#btn-cta:visited {
-    border: solid 2px #000; 
+    border: solid 2px white; 
     color: #fff; 
-    background-color: #000; 
+    background-color: transparent; 
 } 
 
 .container-menu a#btn-cta:focus, 
 .container-menu a#btn-cta:hover, 
 .container-menu a#btn-cta:active  {
-    border: solid 2px var(--gray-700); 
-    background-color: var(--gray-700);  
-    color: #fff;
+    border: solid 2px var(--black-000); 
+    background-color: transparent;  
+    color: black;
 }
 
 .container-menu a#btn-cta > *:nth-child(2) { 

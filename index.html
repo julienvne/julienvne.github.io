@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
     <!-- Font Awesome 5 icons -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
 
@@ -29,6 +30,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
     rel="stylesheet">
 
+    <!-- icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+
 </head>
 
 
@@ -37,12 +45,11 @@
     <!-- navigation menu -->
     
     <nav class="container-menu menu-desktop">
-        <div class="icon">
-            <img src="assets/img/icon/android-chrome-192x192.png" alt="website logo"></a>
-        </div>
+        <div class="banniere"><img src="assets/img/banniere.png" alt="website logo"></a></div>    
         <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
+            <li><a href="exercices.html">Project</a></li>
+            <li><a href="#">Experience</a></li>   
             <li><a href="#">Contact</a></li>            
             <li><a href="assets/doc/CV.pdf" id="btn-cta" class="btn-soft"><span></span>CV<i class="fas fa-arrow-right"></i></a></li>
         </ul>
@@ -58,17 +65,17 @@
     <header class="hero-block text-center-desktop text-center-mobile">
         <div class="hero-text-container">
             <div class="anim">
-                <image id="logo" src="assets/img/icon/android-chrome-192x192.png">
+                <image id="logo" src="assets/img/android-chrome-192x192.png">
             </div>
             <div class="title">
             <h1 class="slide-in-left">Julie Navone</h1>
             </div>
-            
         </div>
+        <!--<img class="coding" src="assets/img/girl coding.png">-->
         <div class="container-btn">
             <a href="#" class="btn btn-secondary btn-soft"><span>About</span><i class="far fa-user"></i></a>
-            <a href="#" class="btn btn-secondary btn-soft"><span>Project</span><i class="fas fa-code"></i></a>
-            <a href="#" class="btn btn-secondary btn-soft"><span>Contact</span><i class="fas fa-at"></i></a>
+            <a href="exercices.html" class="btn btn-secondary btn-soft"><span>Project</span><i class="fas fa-code"></i></a>
+            <a href="#" class="btn btn-secondary btn-soft"><span>Experience</span><i class="fas fa-briefcase"></i></a>
         </div>
         
     </header>
@@ -81,24 +88,24 @@
         </div>
         <section class="container-flex theme-two">
             <div class="col-1 text-center"><div class="upper-label">recent projects</div>
-            <p>Check out all my <a href="#">projects</a></p>
+            <p>Check out all my <a href="exercices.html">projects</a></p>
             </div>
             <div class="col-3">
-                <h3 class="text-center">Lorem ipsum dolo</h3>
-                <figure><img src="https://picsum.photos/420/250" alt="Placeholder image"></figure>
-                <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Velsit perferendis officia.</p>
+                <h3 class="text-center">Snazzy Crypto Wallet</h3>
+                <figure><a href="portfolio/crypto-wallet/index.html"><img src="assets/img/projet-crypto.png" alt="project-van-gogh"></a></figure>
+                <p>learn how to control your crypto wallet</p>
             </div>
             <div class="col-3">
-                <h3 class="text-center">Lorem ipsum dolo</h3>
-                <figure><img src="https://picsum.photos/420/250" alt="Placeholder image"></figure>
+                <h3 class="text-center">Smooth Smoothie</h3>
+                <figure><a href="portfolio/smoothies/index.html"><img src="assets/img/project-smoothie.jpg" alt="project-smoothie"></a></figure>
                 
-                <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Velsit perferendis officia.</p>
+                <p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals</p>
             </div>
 
             <div class="col-3">
-                <h3 class="text-center">Lorem ipsum dolo</h3>
-                <figure><img src="https://picsum.photos/420/250" alt="Placeholder image"></figure>
-                <p>Lorem ipsum dolor sit amet voluptas. Consectetur adipisicing. Possimus dolores accusamus facilis fugiat. Velsit perferendis officia.</p>
+                <h3 class="text-center">Super Snazy</h3>
+                <figure><a href="portfolio/fashion/index.html"><img src="assets/img/project-fashion.jpg" alt="project-fashion"></a></figure>
+                <p>let's go for a big shopping</p>
             </div>
         </section>
 
