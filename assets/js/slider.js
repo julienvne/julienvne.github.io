@@ -1,10 +1,10 @@
-const sliders = document.querySelector(".sliderbox")
-var scrollPerClick = 400;
+const sliders = document.querySelectorAll(".sliderbox")
+var scrollPerClick = 520;
 var scrollAmount = 0;
 
-function sliderScrollLeft()
+function sliderScrollLeft(index)
 {
-    sliders.scrollTo(
+    sliders[index].scrollTo(
         {
             top: 0,
             left: (scrollAmount -= scrollPerClick),
@@ -18,11 +18,11 @@ function sliderScrollLeft()
     }
 }
 
-function sliderScrollRight()
+function sliderScrollRight(index)
 {
-    if(scrollAmount <= sliders.scrollWidth - sliders.clientWidth)
+    if(scrollAmount <= sliders[index].scrollWidth - sliders[index].clientWidth)
     {
-        sliders.scrollTo(
+        sliders[index].scrollTo(
             {
                 top: 0,
                 left: (scrollAmount += scrollPerClick),

@@ -180,7 +180,7 @@ nav{
 }
 
 .corps {
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 70px 0px;
     font-family: 'kalam', cursive;
 }
 
@@ -190,8 +190,7 @@ nav{
 
 .theme{
     background-color: #f5e2dd;
-    margin: 20px 0px 0px 0px;
-    padding: 20px 0px 20px 0px;
+    padding: 30px 0px 30px 0px;
     text-transform: uppercase; 
     letter-spacing: 6px; word-spacing: 120%;
 }
@@ -211,8 +210,8 @@ nav{
 }
 
 .item{
-    min-width: 25%;
-    max-width: 25%;
+    min-width: 33.5%;
+    max-width: 33.5%;
     background-size: cover;
     cursor: pointer;
     transition: 0.5s ease;
@@ -222,31 +221,30 @@ nav{
 
 .item:hover {
     transform: scale(1.05);
-    z-index: 5;
+    z-index: 3;
 }
 
 .arrow-left, .arrow-right {
-    color: black;
-    font-weight: bold;
     height: 100%;
     width: 45px;
-    line-height: 250px;
+    color: black;
+    font-weight: bold;
     font-size: 25px;
     text-align: center;
-    z-index: 6;
+    z-index: 4;
 }
 
 .arrow-left{
     position: absolute;
     cursor: pointer;
-    top: 40px;
+    top: 50%;
     left: 4px;
 }
 
 .arrow-right{
     position: absolute;
     cursor: pointer;
-    top: 40px;
+    top: 50%;
     right: 4px;
 }
 
