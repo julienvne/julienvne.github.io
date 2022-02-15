@@ -138,6 +138,9 @@ input, button, textarea, select { font: inherit }
     --ontrend-800: #1f364d;
     --ontrend-900: #0e2439;
 
+    --darkBlue: #222c3b;
+    --gold: #fae3c2;
+
     --global-font: var(--sans-serif);
     --drop-shadow: var(--gray-500);
     --img-border: var(--gray-700);
@@ -168,7 +171,8 @@ input, button, textarea, select { font: inherit }
 .container-menu a#btn-cta:active { color: var(--gray-900) }
 
 body { 
-    font-family: 'Shadows Into Light';
+    font-family: 'Karla', sans-serif;
+    /*font-family: 'Shadows Into Light';*/
     text-align: center;
     background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
     color: #3f3f3f;
@@ -186,6 +190,39 @@ nav{
 
 .corps h2{
     font-weight: 200;
+}
+.title{
+    background-color: var(--darkBlue) !important;
+    color: var(--gold);
+    letter-spacing: 15px !important;
+    position: absolute;
+    top: 73%;
+    left: calc(50% - 155px);
+}
+.projet{
+    background-color: var(--darkBlue);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+.image{
+    width: 45%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.image:hover{
+    transform: scale(1.05);
+}
+
+.desc{
+    color: var(--gold);
+    width: 45%;
 }
 
 .theme{
