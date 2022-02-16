@@ -1,0 +1,98 @@
+.menu { 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #113944;
+}
+.logo {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px;
+}
+.logo a {
+	color: white;
+	text-decoration: none;
+}
+.links {
+	display: flex;
+	justify-content: space-around;
+	width: 51%;
+}
+.links li {
+	list-style: none;
+}
+.links a {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 14px;
+}
+h1  { 
+     margin: 25px;
+     color: #113944;
+	 font-size: 39px;
+     font-variant: small-caps; 
+	 text-align: center;
+}
+body { 
+     margin: 0px;
+	 padding: 0px;
+     font-family : Playfair Display;
+     font-size: 25px;
+	 color: black;
+	 text-align: center;
+	 background-image: url('../images/blanc.jpg'); 
+	 background-repeat: no-repeat; 
+	 background-size: cover;
+}
+.image {
+	width: 700px; 
+	height: 400px;
+}
+.image2 {
+	float: right;
+	margin-right: 10px;
+	margin-top: 30px;
+	width: 145px; 
+	height: 170px;
+}
+.mot {
+	display: inline;
+	color: black;
+	text-decoration-color: #113944;
+}
+.titre {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #113944;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: White;
+}
+.position {
+	margin: 30px;
+	text-align: left;
+}
+.top { 
+  position: fixed; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 50px; 
+  right: 30px; 
+} 
+.top img { 
+  width: 33px; 
+}
+.space { 
+	color: black;
+}
+footer {
+	color: white;
+	font-size: 15px;
+	background-color: black;
+	text-align: center;
+}

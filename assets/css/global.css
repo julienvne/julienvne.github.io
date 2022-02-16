@@ -175,29 +175,101 @@ body {
     /*font-family: 'Shadows Into Light';*/
     text-align: center;
     background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
-    color: #3f3f3f;
+    color: var(--darkBlue);
 }
 
+.corps{
+    background-color: var(--darkBlue);
+}
 nav{
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
 }
 
-.corps {
-    margin: 50px 0px 70px 0px;
-    font-family: 'kalam', cursive;
+.top {
+    margin: 50px 0px 30px 0px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
 }
 
-.corps h2{
-    font-weight: 200;
+.top h1{
+    margin-bottom: 50px;
+    font-weight: 300;
 }
+
+.skills {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.skills p{
+    font-size: 15px;
+    font-family: 'karla';
+}
+
+.skills div {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
 .title{
     background-color: var(--darkBlue) !important;
     color: var(--gold);
-    letter-spacing: 15px !important;
-    position: absolute;
-    top: 73%;
-    left: calc(50% - 155px);
+    letter-spacing: 10px !important;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.title h1{
+    font-weight: 200;
+    margin-bottom: 120px;
+}
+
+.title h3{
+    text-align: center;
+    margin: 0 auto;
+    width: 100px; 
+    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
+    width: 30%;
+    font-weight: 300;
+    color: var(--darkBlue);
+}
+
+.separation{
+    position: relative;
+    left: 25%;
+    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
+    width: 50%;
+    height: 1px;
+}
+
+.skill-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.p1{
+    background-color: var(--darkBlue);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0 70px 0;
 }
 .projet{
     background-color: var(--darkBlue);
@@ -208,8 +280,9 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px 0 10px 0;
+    margin: 100px 0 100px 0;
 }
+
 .image{
     width: 45%;
     cursor: pointer;
@@ -221,9 +294,29 @@ nav{
 }
 
 .desc{
+    align-items: center;
     color: var(--gold);
     width: 45%;
+    font-size: large;
+    font-weight: 200;
 }
+.desc h1{
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.desc h2{
+    font-weight: 200;
+}
+
+.hop { 
+    position: fixed;  
+    bottom: 50px; 
+    right: 30px; 
+  } 
+
+
+
 
 .theme{
     background-color: #f5e2dd;
