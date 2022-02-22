@@ -144,6 +144,7 @@ input, button, textarea, select { font: inherit }
     --global-font: var(--sans-serif);
     --drop-shadow: var(--gray-500);
     --img-border: var(--gray-700);
+
 }
 /* Desktops */
 @media (min-width: 768px) { body { padding: 0 } }
@@ -178,163 +179,128 @@ body {
     color: var(--darkBlue);
 }
 
-.corps{
-    background-color: var(--darkBlue);
-}
 nav{
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
-}
-
-.top {
-    margin: 50px 0px 30px 0px;
-    display: flex;    
-    flex-direction: column;
     align-items: center;
 }
 
-.top h1{
-    margin-bottom: 50px;
-    font-weight: 300;
-}
-
-.skills {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 500px;
-}
-
-.skills p{
-    font-size: 15px;
-    font-family: 'karla';
-}
-
-.skills div {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.title{
-    background-color: var(--darkBlue) !important;
-    color: var(--gold);
-    letter-spacing: 10px !important;
-    padding-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.title h1{
-    font-weight: 200;
-    margin-bottom: 120px;
-}
-
-.theme1 h3{
-    text-align: center;
-    margin: 5px 10px 5px 10px;
-    height: 30px;
-    letter-spacing: 10px !important;
-    font-weight: 300;
-    color: var(--darkBlue);
-}
-
-.separation{
-    position: relative;
-    left: 25%;
-    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
-    width: 50%;
-    height: 1px;
-}
-
-.skill-item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-.p1{
-    background-color: var(--darkBlue);
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0px 0 70px 0;
-}
-.projet{
-    background-color: var(--darkBlue);
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 100px 0 100px 0;
-}
-
-.image{
-    width: 40%;
-    cursor: pointer;
-    transition: 0.5s ease;
-}
-
-.image:hover{
-    transform: scale(1.05);
-}
-
-.desc{
-    align-items: center;
-    color: var(--gold);
-    width: 40%;
-    font-size: large;
-    font-weight: 200;
-}
-.desc h1{
-    font-weight: 200;
-    margin-bottom: 5px;
-}
-
-.desc h2{
-    font-weight: 200;
-}
-
-.hop { 
-    position: fixed;  
-    bottom: 50px; 
-    right: 30px; 
-  } 
-
-.theme{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.theme1{
-    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
-    width: 30%;
-    height: 40px;
-}
-
-.theme2{
-    width: 40px;;
-}
 .icon {
     margin-top: 1.5%;
     margin-left: 2%;
     width: 3%;
 
 }
+
+.contact {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0 20px 0;
+    color: var(--gold);
+}
+.contact form {
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    font-weight: 200;
+}
+
+.contact h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 20px 0 20px 0;
+}
+
+.contact form label {
+    font-size: 18px;
+    width: 100%;
+    margin: 10px;
+}
+
+.contact form input {
+    width: 100%;
+    height: 40px;
+    border: solid 1px var(--gold);
+    background: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: var(--text);
+    font-weight: 200;
+    font-size: 18px;
+    color: var(--gold);
+    font-weight: 400;
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 100px;
+    border: solid 1px var(--gold);
+    background: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: var(--text);
+    font-weight: 200;
+    font-size: 18px;
+    color: var(--gold);
+    font-weight: 400;
+}
+
+.contact form button {
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    background: none;
+    border: solid 1px var(--gold);
+    font-family: var(--text);
+    color: var(--gold);
+    font-size: 22px;
+    font-weight: 200;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 45%;
+}
+
+.join a{
+    text-decoration: none;
+    color: var(--darkBlue);
+    padding-bottom: 30px;
+}
+
+.join a:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.join{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    padding: 20px;
+}
+
+
+
+
+
 
 
 /* ======================= MENUS ========================*/

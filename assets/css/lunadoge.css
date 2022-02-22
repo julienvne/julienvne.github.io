@@ -1585,7 +1585,7 @@ div[class*='col-'] figure.icon {
 }
 
 /*Hyperlinks in text*/ 
-a:not(.btn):any-link {
+/*a:not(.btn):any-link {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 7px;
@@ -1597,7 +1597,7 @@ a:not(.btn):any-link {
     text-decoration: underline;
     text-decoration-thickness: 0;
     color: var(--white-000);
-}
+}*/
 
 /* =============== BUTTONS: REAL AND FAUX ============== */
 

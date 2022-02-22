@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/lunadoge.css" />
-    <link rel="javascript" href="assets/js/slider.js">
+    <!--<link rel="stylesheet" href="assets/css/lunadoge.css" />-->
+    <!--<link rel="javascript" href="assets/js/slider.js">-->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julie Navone | Home Page</title>
-    <meta name="description" content="Welcome to my website that showcases some of my digital creations.">   </title>
+    <title>Julie Navone | Projects</title>
+    <meta name="description" content="This page presents my different projects"></title>
+
+    <!-- Preload image -->
+    <link rel="preload" href="assets/img/webb.png" as="image">
+    <link rel="preload" href="assets/img/webb1.png" as="image">
+    <link rel="preload" href="assets/img/webb2.png" as="image">
+    <link rel="preload" href="assets/img/webb3.png" as="image">
+    <link rel="preload" href="assets/img/webb4.png" as="image">
+    <link rel="preload" href="assets/img/webb5.png" as="image">
+    <link rel="preload" href="assets/img/webb6.png" as="image">
+    <link rel="preload" href="assets/img/webb7.png" as="image">
+    <link rel="preload" href="assets/img/webb8.png" as="image">
+    <link rel="preload" href="assets/img/SIS.png" as="image">
+    <link rel="preload" href="assets/img/ocr2.png" as="image">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +51,7 @@
             <li><a href="#">About</a></li>
             <li><a href="exercices.html">Project</a></li>
             <li><a href="#">Experience</a></li>   
-            <li><a href="#">Contact</a></li>            
+            <li><a href="contact.html">Contact</a></li>            
         </ul>
         <div class="item-icon">
             <div class="bar1"></div>
@@ -133,11 +146,17 @@
   <div class="corps">
     <div class="title"> 
         <h1>My Projects</h1>
-        <h3>Web Projects</h3>
+        <div class="theme">
+            <div class="theme1"> <h3>Web Projects</h3> </div>
+            <div class="theme2"><a href="#projet2">
+                <svg transform="rotate(180)" fill="var(--gold)" width="40" height="40" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64">
+                    <polyline points="-191.3 -296.9 -193.3 -294.9 -205 -306.6 -216.7 -294.9 -218.7 -296.9 -205 -310.6 -191.3 -296.9" transform="translate(237 335)"/>
+                </svg></a></div>
+        </div>
     </div>
         <div class="p1">
                 <div class="image">
-                <a href="portfolio/crypto-wallet/index.html"><img src="assets/img/webb1.png"> </a>
+                <a href="portfolio/crypto-wallet/index.html" target="_blank"><img src="assets/img/webb1.png"> </a>
                 </div>
                 <div class="desc">
                     <h1>Snazzy Crypto Wallet</h1>
@@ -165,7 +184,7 @@
         <div class="separation"></div>
         <div class="projet">
             <div class="image">
-            <a href="portfolio/fashion/index.html"><img src="assets/img/webb2.png"> </a>
+            <a href="portfolio/fashion/index.html" target="_blank"><img src="assets/img/webb2.png"> </a>
             </div>
             <div class="desc">
                 <h1>Super Snazzy</h1>
@@ -193,7 +212,7 @@
         <div class="separation"></div>
         <div class="projet">
             <div class="image">
-            <a href="portfolio/smoothies/index.html"><img src="assets/img/webb3.png"> </a>
+            <a href="portfolio/smoothies/index.html" target="_blank"><img src="assets/img/webb3.png"> </a>
             </div>
             <div class="desc">
                 <h1>Smooth Smoothies</h1>
@@ -216,7 +235,7 @@
         <div class="separation"></div>
         <div class="projet">
             <div class="image">
-            <a href="portfolio/van-gogh/index.html"><img src="assets/img/webb4.png"> </a>
+            <a href="portfolio/van-gogh/index.html" target="_blank"><img src="assets/img/webb4.png"> </a>
             </div>
             <div class="desc">
                 <h1>Vincent Van Gogh</h1>
@@ -239,7 +258,7 @@
         <div class="separation"></div>
         <div class="projet">
             <div class="image">
-            <a href="#"><img src="assets/img/webb5.png"> </a>
+            <a><img src="assets/img/webb5.png"> </a>
             </div>
             <div class="desc">
                 <h1>Giwa</h1>
@@ -277,7 +296,7 @@
         <div class="separation"></div>
         <div class="projet">
             <div class="image">
-            <a href="sécurité internet/pages/sécurité-(accueil).html"><img src="assets/img/webb6.png"> </a>
+            <a href="sécurité internet/pages/sécurité-(accueil).html" target="_blank"><img src="assets/img/webb6.png"> </a>
             </div>
             <div class="desc">
                 <h1>IT security</h1>
@@ -300,7 +319,7 @@
         <div class="separation"></div>
         <div class="projet">
             <div class="image">
-            <a href="#"><img src="assets/img/webb7.png"> </a>
+            <a><img src="assets/img/webb7.png"> </a>
             </div>
             <div class="desc">
                 <h1>Stranded In Space</h1>
@@ -323,7 +342,7 @@
         <div class="separation"></div>
         <div class="projet">
             <div class="image">
-            <a href="index.html"><img src="assets/img/webb.png"> </a>
+            <a href="index.html" target="_blank"><img src="assets/img/webb.png"> </a>
             </div>
             <div class="desc">
                 <h1>Julie Navone</h1>
@@ -348,8 +367,12 @@
             </div>
         </div>
 
-        <div class="title"> 
-            <h3>Big Projects</h3>
+        <div class="theme" id="projet2"> 
+            <div class="theme1"> <h3>Big Projects</h3> </div>
+            <div class="theme2"><a href="#projet3">
+                <svg transform="rotate(180)" fill="var(--gold)" width="40" height="40" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64">
+                    <polyline points="-191.3 -296.9 -193.3 -294.9 -205 -306.6 -216.7 -294.9 -218.7 -296.9 -205 -310.6 -191.3 -296.9" transform="translate(237 335)"/>
+                </svg></a></div>
         </div>
 
         <div class="projet">
@@ -377,29 +400,24 @@
                 <p>Stranded In Space is a 3D Tower Defense with a local multiplayer. The game  takes place in space</p>
             </div>
             <div class="image">
-                <a href="#"><img src="assets/img/sis.png"> </a>
+                <a><img src="assets/img/sis.png"> </a>
             </div>
         </div>
         <div class="separation"></div>
         <div class="projet">
             <div class="desc">
-                <h1>IT security</h1>
-                <h2>Duo Project | 3 Weeks</h2></br>
+                <h1>Optical Character Recognition</h1>
+                <h2>Group Project | 3 Months</h2></br>
                 <div class="skill-item"> 
                     <div><svg fill="var(--gold)" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                    <path d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387 10.015-112.107h-109.936zm89.126 26.539l-.627 7.172-.276 3.289h-52.665000000000006l1.257 14h50.156000000000006l-.336 3.471-3.233 36.119-.238 2.27-28.196 7.749v.002l-.034.018-28.177-7.423-1.913-21.206h13.815000000000001l.979 10.919 15.287 4.081h.043v-.546l15.355-3.875 1.604-17.579h-47.698l-3.383-38.117-.329-3.883h68.939l-.33 3.539z"/>
-                    </svg>
-                    </div>
-                    <p>&ensp;&ensp;</p>
-                    <div><svg fill="var(--gold)" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                        <path d="M8.76 1l10.055 112.883 45.118 12.58 45.244-12.626 10.063-112.837h-110.48zm89.591 25.862l-3.347 37.605.01.203-.014.467v-.004l-2.378 26.294-.262 2.336-28.36 7.844v.001l-.022.019-28.311-7.888-1.917-21.739h13.883l.985 11.054 15.386 4.17-.004.008v-.002l15.443-4.229 1.632-18.001h-32.282999999999994l-.277-3.043-.631-7.129-.331-3.828h34.748999999999995l1.264-14h-52.926l-.277-3.041-.63-7.131-.332-3.828h69.281l-.331 3.862z"/>
+                        <path d="M116.5 32.3c-.6-1.1-1.4-2.1-2.3-2.6l-48.1-27.8c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48.5 27.8c-1.7 1-3.4 3.5-3.4 5.4v55.7c0 1.1.7 2.3 1.4 3.4l.1.1c.5.8 1.3 1.5 2 1.9l48.3 27.9c.8.5 2 .7 3.2.7 1.2 0 2.3-.3 3.1-.7l47.5-27.9c1.7-1 2.4-3.5 2.4-5.4v-55.7c0-.8.4-1.8 0-2.6l.5-.2zm-4.2 2.1c0 .3-.3.5-.3.7v55.7c0 .8-.2 1.7-.4 2l-47.6 27.8c-.1.1-.5.2-1.1.2-.6 0-1-.1-1.1-.2l-48.2-27.8s-.1-.1-.2-.1l-.6-.6c-.4-.7.2-1.1-.8-1.2v-55.7c1-.5.9-1.7 1.4-1.9l48.3-27.9c.1 0 .6-.2 1.2-.2s1 .1 1.1.2l48 27.7.4.9c.1.1-.1.3-.1.4zM63 38.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6c-4.2 7.4-12.2 12.4-21.3 12.4-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5z"/>
                     </svg>
                     </div>
                 </div>
-                <p>IT Security is my first web site, it is the support of a presentation on computer security</p>
+                <p>The final goal of this project was to create an OCR able to recognize a 9x9 sudoku grid (no matter the angle and the quality of the image) and to solve it.</p>
             </div>
             <div class="image">
-                <a href="sécurité internet/pages/sécurité-(accueil).html"><img src="assets/img/webb6.png"> </a>
+                <a><img src="assets/img/ocr2.png"> </a>
             </div>
         </div>
 
@@ -412,102 +430,7 @@
     </svg></a>
   </div>
 
+   <!--<script src="assets/js/slider.js"></script>--> 
+<script src="assets/js/menu.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="theme upper-label">
-    <h4>Web Sites</h4>
-  </div>
-
-    <div class="slider">
-        <div class="sliderbox">
-            <div class="item">
-                <a href="index.html"><img src="assets/img/web.png" alt="personnal web site"></a>
-            </div>
-            <div class="item">
-                <a href="portfolio/crypto-wallet/index.html"><img src="assets/img/web1.png" alt="crypto-wallet web site"></a>
-            </div>
-            <div class="item">
-                <a href="portfolio/fashion/index.html"><img src="assets/img/web2.png" alt="fashion web site"></a>
-            </div>
-            <div class="item">
-                <a href="portfolio/smoothies/index.html"><img src="assets/img/web3.png" alt="smoothies web site"></a>
-            </div>
-            <div class="item">
-                <a href="portfolio/van-gogh/index.html"><img src="assets/img/web4.png" alt="van gogh web site"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="assets/img/web5.png" alt="Giwa web site"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="assets/img/web7.png" alt="Stranded In Space web site"></a>
-            </div>
-            <div class="item">
-                <a href="#"><img src="assets/img/web6.png" alt="IT security web site"></a>
-            </div>
-        <a class="arrow-left arrow"  onclick="sliderScrollLeft(0)" > < </a>
-        <a class="arrow-right arrow" onclick="sliderScrollRight(0)" > > </a>
-    </div>
-    </div>
-
-    <div class="theme upper-label">
-        <h4>Project in C and C#</h4>
-      </div>
-    
-        <div class="slider">
-            <div class="sliderbox">
-                <div class="item">
-                    <a href="index.html"><img src="assets/img/sis3.png" alt="personnal web site"></a>
-                </div>
-                <div class="item">
-                    <a href="portfolio/crypto-wallet/index.html"><img src="assets/img/OCR.png" alt="crypto-wallet web site"></a>
-                </div>
-                <div class="item">
-                    <a href="portfolio/crypto-wallet/index.html"><img src="assets/img/futur.png" alt="crypto-wallet web site"></a>
-                </div>
-            <a class="arrow-left arrow"  onclick="sliderScrollLeft(1)" > < </a>
-            <a class="arrow-right arrow" onclick="sliderScrollRight(1)" > > </a>
-        </div>
-        </div>
-  <!--    <img src="assets/img/ordi1.jpg"></img>
-
-    <p>I created this website to practice</p>  
-
-    <h3>Sample Web Pages</h3>
-        <li><a href="exercises/page-1.html">A Tale of Two Cities</a> </li>
-        <li><a href="exercises/page-2.html">IBAT Chocolates</a></li>
-        <li><a href="exercises/page-3.html">Prince &amp; Purple Rain</a></li>
-        <li><a href="exercises/page-4.html">Lorem Ipsum Text</a></li>
-        <li><a href="exercises/page-5.html">Vincent van Gogh</a></li>
-        <li><a href="exercises/page-6.html">Irish Tourism</a></li>
-        <li><a href="exercises/page-7.html">Smooth Smoothies</a></li>
-        <li><a href="exercises/page-8.html">Software Analytics</a></li>
-        <li><a href="exercises/page-9.html">The Box Model</a></li>
-        <li><a href="exercises/page-10.html">Web Page With Panels</a></li>
-        <li><a href="exercises/hero-text.html">Hero block with animated text</a></li>
-        <li><a href="exercises/hero-image.html">Hero block with background image</a></li>
-        <li><a href="exercises/hero-video.html">Hero block with background video</a></li>
-   -->
-   
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/menu.js"></script>
-
-    </body></html>
+</body></html>
