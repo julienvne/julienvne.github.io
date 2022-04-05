@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Random Quotes Generator Project | Mary Smith | Front-end Developer | </title>
+    <title>JavaScript Random Quotes Generator Project | Julie Navone | </title>
     <meta name="description" content="Uses the Fetch API to retrieve a randomly-choosen selection of ten inspiring quotations.">
 
 	<!-- Stylesheets -->
-    <link rel="stylesheet" href="../../../assets/css/lunadoge.min.css" />
-    <link rel="stylesheet" href="../../../assets/css/css-javascript.css" />
+    <link rel="stylesheet" href="../../assets/css/lunadoge.min.css" />
+    <link rel="stylesheet" href="../../assets/css/css-javascript.css" />
 
     <style>
 
         /* ============ Header Colours =============*/
-        header.hero-block-js { background-color: #f7df1e }
+        header.hero-block-js { background-color: #d2ffd8 }
         header.hero-block-js h1 { color: #222 }
         header.hero-block-js h2 { color: var(--gray-700) }
 
@@ -86,6 +86,8 @@
 
         .col-3 p span { color: red }
 
+        .logo {  width: 40px; }
+
     </style>
 
 	<!-- Font Awesome 6.1 icons -->
@@ -105,11 +107,11 @@
     <!-- navigation menu -->
 
     <nav class="container-menu menu-desktop menu-sticky">
-        <a href="#"><img src="../../../assets/img/website-logo.png" alt="website logo"></a>
+        <a class = "logo" href="../../index.html"><img src="../../assets/img/android-chrome-512x512.png" alt="website logo"></a>
         <ul class="">
-            <li><a href="../../../index.html">Home</a></li>
-            <li><a href="../../../portfolio/index.html">Portfolio</a></li>
-            <li><a href="../../../contact/index.html" id="btn-cta"><span>Contact</span><i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="../../contact.html" id="btn-cta"><span>Contact</span><i class="fas fa-arrow-right"></i></a></li>
         </ul>
         <div class="item-icon">
             <div class="bar1"></div>
@@ -148,6 +150,39 @@
 
     <script>
         
+    document.querySelector("#btn-quotes").addEventListener("click", fetchRandomNumQuotes);
+
+async function fetchRandomNumQuotes() { 
+   await fetch('https://type.fit/api/quotes')
+
+      .then(response => {
+         if (response.status !== 200) {
+            console.log('Error Status Code: ' + response.status);
+            return;
+         }
+         response.json().then((data) => {
+            console.log(data);
+            const lowerNum = getRandomInt(0, data.length-10);
+            const upperNum = lowerNum + 9; 
+            let html_block = "";
+            for (i= lowerNum; i < upperNum; i++) { 
+               html_block = html_block + `<div class="col-3"><p><span>“</span>${data[i].text}<span>”</span></p><h3>${data[i].author}</h3></div>`;
+               document.getElementById("quotes-box").innerHTML = html_block;
+            }
+         });
+       })
+
+       .catch(error => {
+          // handle any error
+      });
+
+}
+
+function getRandomInt(min, max) {
+   min = Math.ceil(min);
+   max = Math.floor(max);
+   return Math.floor(Math.random() * (max - min + 1) + min); 
+}
         
     </script>
 
@@ -155,14 +190,14 @@
     <!-- footer -->
 	<footer>
 
-		<h2>Your Name Here</h2>
+		<h2>Julie Navone</h2>
 
 		<h3>Excellence in digital creation</h3>
 
 		<ul class="footer-links">
-			<li><a href="../../../index.html">Home</a></li>
-			<li><a href="../../../portfolio/index.html">Portfolio</a></li>
-			<li><a href="../../../contact/index.html">Contact</a></li>
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="index.html">Portfolio</a></li>
+			<li><a href="../../contact.html">Contact</a></li>
 		</ul>
 
 		<ul class="footer-icons">
@@ -170,11 +205,11 @@
 			<li><a href="https://github.com/nnnnnnnnnn" target="_blank"><i class="fab fa-github-square"></i></a></li>
 		</ul>
 
-		<p class="index.html"> <a href="../../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
+		<p class="index.html"> <a href="../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
        
     </footer>
 
-    <script src="../../../assets/js/menu.js"></script>
+    <script src="../../assets/js/menu.js"></script>
 
 
 </body>

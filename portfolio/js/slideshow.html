@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Random Colour Generator Project | Julie Navone | </title>
-    <meta name="description" content="Uses an array of hexadecimal values to randomly generate a background colour for the web page.">
+    <title>JavaScript Image Slider Project | Julie Navone | </title>
+    <meta name="description" content="A sample collection of my recent JavaScript projects.">
 
 	<!-- Stylesheets -->
     <link rel="stylesheet" href="../../assets/css/lunadoge.min.css" />
@@ -13,24 +13,24 @@
 
     <style>
 
+
         /* ============ Header Colours =============*/
         header.hero-block-js { background-color: #d2ffd8 }
         header.hero-block-js h1 { color: #222 }
         header.hero-block-js h2 { color: var(--gray-700) }
 
         /* Main Colours */
-        /* .theme-js { 
-            /* background-image:#ff0000;background-image:  
+        .theme-js { 
+            background-image:#ff0000;background-image:  
             radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),  
             radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),  
             radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),  
             radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),  
             radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),  
             radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),  
-            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%); 
-        } */
+            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
+        }
 
-        main { min-height: 50vh} 
         .theme-js .col-2 { background-color: var(--green-100) }
         .theme-js h3 { color: #222 }
         .theme-js p { color: #222 }
@@ -46,41 +46,48 @@
 
         .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) } 
         .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) } 
+        .container-slider { width: 100%; padding: 0 15px; margin: 0 auto }
 
-        /* ===== END PAGE CUSTOM COLOURS ==========*/
-        
-        /* ===== THIS PROJECT ONLY ==========*/
-
-        .theme-js { background-color:#dbf4e4; text-align: center }
-
-        .theme-js h2 { 
-            text-align: center; margin: 0 auto;
-            font-size: 26px;
-            color: #fff; background-color: #000; 
-            display: inline-block; 
-            padding: 20px; line-height: 2; 
-        }
-
-        #color-display { background-color: green; font-weight: 400; padding: 6px 10px  }
-
-        .theme-js p { width: 100% }
-        #btn-color { 
-            display: block;
+        .container-outer { 
+            max-width: 1140px;
             text-align: center;
-            margin: 20px auto 0 auto;
-            padding: 20px 28px;
-            border: 1px none #000;
-            background-color: blue;
-            transition: all 350ms ease;
-            color: #fff;
-            font-size: 18px;
-            line-height: 1;
-            border-radius: 50px;
+            display: flex;
+            flex-wrap: wrap;
         }
-        #btn-color:hover {background-color: darkblue }
-        #btn-color i { margin-right: 10px }
 
-        .logo{width: 40px;}
+        .container-img { 
+            align-items: center !important;
+            min-height: 400px; 
+            background: url("assets/img/dublin-0.jpg");
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-position: center; 
+            background-size: contain; 
+            border: 8px solid #d2ffd8;
+            border-radius: 15px;
+            position: relative;
+            margin: 0 auto;
+            flex: 0 0 83.333333%;
+            max-width: 83.333333%;
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+
+        @media (max-width: 767px) {
+            .container-img { min-height: 30vh } 
+        }
+
+        .btn-left, .btn-right {
+            position: absolute; top: 50%;
+            background: blue; color: #fff;
+            font-size: 1.2rem;
+            border: 0.2rem solid blue;
+        }
+
+        .btn-left { left: 0; transform: translate(-50%, -50%) }
+        .btn-right { right: 0; transform: translate(50%, -50%); }
+
+        .logo {  width: 40px; }
 
     </style>
 
@@ -111,8 +118,8 @@
     <!-- header hero block -->
     <header class="hero-block hero-block-js">
         <div class="hero-text-container">
-            <h1>Random Colour Generator <span>JavaScript Project</span></h1>
-            <h2>Uses an array of hexadecimal values to randomly generate a background colour for the web page. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
+            <h1>Image Slideshow <span>JavaScript Project</span></h1>
+            <h2>A slideshow based on an array of images of Dublin city, Ireland. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
         </div>
     </header>
 
@@ -121,34 +128,63 @@
         
         <section class="container-flex theme-js">
 
-            <h2>Background Colour: &nbsp;<span id="color-display">#dbf4e4</span></h2>
-            <p>&nbsp;</p>
-            <button class="btn" id="btn-color">
-                <i class="fa-solid fa-paint-roller"></i> Click me
-            </button>
+            <div class="container-slider">
+                <div class="container-outer">
+                    <div class="container-img">
+                    
+                    <a class="btn btn-left"><i class="fas fa-caret-left"></i></a>
+                    <a class="btn btn-right"><i class="fas fa-caret-right"></i></a>
+                    
+                    </div>
+                </div>
+            </div>
 
         </section>
 
     </main>
 
     <script>
-        	const arrHex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-	const btnColor = document.querySelector("#btn-color");
-	const strColorDisplay = document.querySelector("#color-display");
 
-	btnColor.addEventListener("click", function () {
-		let strHexColor = "#";
-		for (let i = 0; i < 6; i++) {
-			strHexColor = strHexColor + arrHex[getRandomNumber()];
-		}
-		strColorDisplay.textContent = strHexColor;
-		document.querySelector(".theme-js").style.backgroundColor = strHexColor;
-	});
+        (function() {
+        const pictures = [
+            "dublin-0",
+            "dublin-1",
+            "dublin-2",
+            "dublin-3",
+            "dublin-4",
+            "dublin-5"
+        ];
 
-	// Generate number in range 0 - 15
-	function getRandomNumber() {
-		return Math.floor(Math.random() * arrHex.length);
-	}
+        // Select both left and right button. Add event listeners
+        const buttons = document.querySelectorAll('.btn')
+        const imageDIV = document.querySelector('.container-img')
+        let counter = 0
+
+        buttons.forEach(function(button){
+        button.addEventListener('click', function(e) {
+                    
+            if (button.classList.contains('btn-left')) {
+                counter--;
+                if (counter < 0) {
+                    counter = pictures.length - 1;
+                }
+                imageDIV.style.backgroundImage = `url('../../assets/img/${pictures[counter]}.jpg')`
+                console.log(imageDIV.style.backgroundImage = `url('../../assets/img/${pictures[counter]}.jpg')`)
+            }
+
+            if (button.classList.contains('btn-right')) {
+                counter++;
+                if (counter > pictures.length - 1) {
+                counter = 0;
+            }
+            imageDIV.style.backgroundImage = `url('../../assets/img/${pictures[counter]}.jpg')`
+            console.log(imageDIV.style.backgroundImage = `url('../../assets/img/${pictures[counter]}.jpg')`)
+            }
+            }) // Ends loop for left and right arrows
+        })
+        })();        
+
+
     </script>
 
     

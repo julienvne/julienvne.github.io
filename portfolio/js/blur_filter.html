@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Random Colour Generator Project | Julie Navone | </title>
-    <meta name="description" content="Uses an array of hexadecimal values to randomly generate a background colour for the web page.">
+    <title>JavaScript Image Blur Filter Project |Julie Navone | </title>
+    <meta name="description" content="Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an image.">
 
 	<!-- Stylesheets -->
     <link rel="stylesheet" href="../../assets/css/lunadoge.min.css" />
@@ -14,23 +14,22 @@
     <style>
 
         /* ============ Header Colours =============*/
-        header.hero-block-js { background-color: #d2ffd8 }
+        header.hero-block-js { background-color: #d2ffd8}
         header.hero-block-js h1 { color: #222 }
         header.hero-block-js h2 { color: var(--gray-700) }
 
         /* Main Colours */
-        /* .theme-js { 
-            /* background-image:#ff0000;background-image:  
+
+        main {
+            background-image:#ff0000; background-image:  
             radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),  
             radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),  
             radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),  
             radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),  
             radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),  
             radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),  
-            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%); 
-        } */
-
-        main { min-height: 50vh} 
+            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
+        }
         .theme-js .col-2 { background-color: var(--green-100) }
         .theme-js h3 { color: #222 }
         .theme-js p { color: #222 }
@@ -41,47 +40,34 @@
             border-radius: 6px
         }
 
-        /* Button Colours: active state */
-        .theme-js a.btn:hover { background-color: darkblue }
-
         .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) } 
         .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) } 
 
-        /* ===== END PAGE CUSTOM COLOURS ==========*/
-        
-        /* ===== THIS PROJECT ONLY ==========*/
-
-        .theme-js { background-color:#dbf4e4; text-align: center }
-
-        .theme-js h2 { 
-            text-align: center; margin: 0 auto;
-            font-size: 26px;
-            color: #fff; background-color: #000; 
-            display: inline-block; 
-            padding: 20px; line-height: 2; 
+        :root {
+            --spacing: 10px;
+            --blur: 10px;
+            --base-color: #222;
         }
 
-        #color-display { background-color: green; font-weight: 400; padding: 6px 10px  }
-
-        .theme-js p { width: 100% }
-        #btn-color { 
-            display: block;
+        .theme-js {
             text-align: center;
-            margin: 20px auto 0 auto;
-            padding: 20px 28px;
-            border: 1px none #000;
-            background-color: blue;
-            transition: all 350ms ease;
-            color: #fff;
-            font-size: 18px;
-            line-height: 1;
-            border-radius: 50px;
+            font-size: 50px;
         }
-        #btn-color:hover {background-color: darkblue }
-        #btn-color i { margin-right: 10px }
 
-        .logo{width: 40px;}
+        .controls { margin-bottom: 50px }
 
+        input { width: 100px; }
+
+        label { color: var(--base-color); 
+            font-size:  calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320))
+        }
+
+        .theme-js img {
+            padding: var(--spacing);
+            background: var(--base-color);
+            filter: blur(var(--blur));
+        }
+        .logo {  width: 40px; }
     </style>
 
 	<!-- Font Awesome 6.1 icons -->
@@ -111,44 +97,49 @@
     <!-- header hero block -->
     <header class="hero-block hero-block-js">
         <div class="hero-text-container">
-            <h1>Random Colour Generator <span>JavaScript Project</span></h1>
-            <h2>Uses an array of hexadecimal values to randomly generate a background colour for the web page. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
+            <h1>Image Blur Filter <span>JavaScript Project</span></h1>
+            <h2>Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an image. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
         </div>
     </header>
 
     <!-- main content with sections -->
     <main>
         
-        <section class="container-flex theme-js">
+        <section class="container-flex theme-js" id="conta">
 
-            <h2>Background Colour: &nbsp;<span id="color-display">#dbf4e4</span></h2>
-            <p>&nbsp;</p>
-            <button class="btn" id="btn-color">
-                <i class="fa-solid fa-paint-roller"></i> Click me
-            </button>
-
+            <div class="controls">
+                <label for="spacing">Spacing:</label>
+                <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+            
+                <label for="blur">Blur:</label>
+                <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+            
+                <label for="base-color">Base Color</label>
+                <input id="base-color" type="color" name="base-color" value="#ffc600">
+              </div>
+            
+              <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+              
         </section>
 
     </main>
 
     <script>
-        	const arrHex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-	const btnColor = document.querySelector("#btn-color");
-	const strColorDisplay = document.querySelector("#color-display");
 
-	btnColor.addEventListener("click", function () {
-		let strHexColor = "#";
-		for (let i = 0; i < 6; i++) {
-			strHexColor = strHexColor + arrHex[getRandomNumber()];
-		}
-		strColorDisplay.textContent = strHexColor;
-		document.querySelector(".theme-js").style.backgroundColor = strHexColor;
-	});
+        // Get controls
+        const inputs = document.querySelectorAll('.controls input');
 
-	// Generate number in range 0 - 15
-	function getRandomNumber() {
-		return Math.floor(Math.random() * arrHex.length);
-	}
+        // Attach event listeners
+        inputs.forEach(input => input.addEventListener('change', handleUpdate));
+        inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+            
+        function handleUpdate() {
+        // dataset retrieves the suffix from the data object
+        const suffix = this.dataset.sizing || ''; 
+        // Set a style property (css variable from the page);
+        document.querySelector(".theme-js").style.setProperty(`--${this.name}`, this.value + suffix); 
+        }
+
     </script>
 
     
