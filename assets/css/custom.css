@@ -140,7 +140,8 @@
 body {
     font-family: 'Kalam', cursive;
     color: var(--darkBlue);
-    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
+    background-color: #f4cdca;
+    /*background-image: linear-gradient(90deg,#f0dfdf, #fab0a9)/*#fae3c2,#cca9b9); */
 }
 
 
@@ -221,7 +222,8 @@ body {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-header {background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
+header {
+    background-image: linear-gradient(90deg,#f4cdca, #f4cdca);
     font-family: 'Montserrat', sans-serif;}
 
 header.hero-block h2 { color: var(--gray-900) }
@@ -245,8 +247,9 @@ header.hero-block a.btn-secondary:active { background-color: transparent; }
 }
 
 nav{
-    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
+    background-image: linear-gradient(90deg,#f4cdca, #f4cdca);
     font-family: 'Montserrat', sans-serif;
+
 }
 
 .banniere{
@@ -273,7 +276,7 @@ nav{
     position: relative;
     left: 25%;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: white;
     width: 50%;
     height: 3px;
@@ -290,6 +293,24 @@ nav{
 
 .theme-two .col-3{
     color: white;
+}
+
+.join a{
+    text-decoration: none;
+    color: var(--gray-800);
+    padding: 10px;
+}
+
+.join a:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.join{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /*.coding{

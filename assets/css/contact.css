@@ -175,13 +175,13 @@ body {
     font-family: 'Karla', sans-serif;
     /*font-family: 'Shadows Into Light';*/
     text-align: center;
-    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
+    background-image: linear-gradient(90deg,#f4cdca,#f4cdca);
     color: var(--darkBlue);
 }
 
 nav{
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(90deg,#fae3c2,#cca9b9);
+    background-image: linear-gradient(90deg,#f4cdca,#f4cdca);
     align-items: center;
 }
 
