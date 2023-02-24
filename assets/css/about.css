@@ -1,0 +1,406 @@
+
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: none }
+*, *::before, *::after { box-sizing: border-box }
+html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
+scroll-behavior: smooth; scroll-padding-top: 20px }
+body { /* max-width: 1920px; */ line-height: 1.5; margin-left: auto; margin-right: auto; 
+min-height: 100vh; text-rendering: optimizeSpeed }  
+img { width: 100%; height: auto; display: block }
+input, button, textarea, select { font: inherit }
+
+:root {
+    /* Nicer than default sans-serif font */
+    /*--sans-serif: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+
+    /* Color variables */
+    --black-000: #000;
+    --white-000: #fff;
+
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+
+    --blue-100: #cfe2ff;
+    --blue-200: #9ec5fe;
+    --blue-300: #6ea8fe;
+    --blue-400: #3d8bfd;
+    --blue-500: #0d6efd;
+    --blue-600: #0a58ca;
+    --blue-700: #084298;
+    --blue-800: #052c65;
+    --blue-900: #031633;
+
+    --indigo-100: #e0cffc;
+    --indigo-200: #c29ffa;
+    --indigo-300: #a370f7;
+    --indigo-400: #8540f5;
+    --indigo-500: #6610f2;
+    --indigo-600: #520dc2;
+    --indigo-700: #3d0a91;
+    --indigo-800: #290661;
+    --indigo-900: #140330;
+
+    --purple-100: #e2d9f3;
+    --purple-200: #c5b3e6;
+    --purple-300: #a98eda;
+    --purple-400: #8c68cd;
+    --purple-500: #6f42c1;
+    --purple-600: #59359a;
+    --purple-700: #432874;
+    --purple-800: #2c1a4d;
+    --purple-900: #160d27;
+
+    --pink-100: #f7d6e6;
+    --pink-200: #efadce;
+    --pink-300: #e685b5;
+    --pink-400: #de5c9d;
+    --pink-500: #d63384;
+    --pink-600: #ab296a;
+    --pink-700: #801f4f;
+    --pink-800: #561435;
+    --pink-900: #2b0a1a;
+
+    --red-100: #f8d7da;
+    --red-200: #f1aeb5;
+    --red-300: #ea868f;
+    --red-400: #e35d6a;
+    --red-500: #dc3545;
+    --red-600: #b02a37;
+    --red-700: #842029;
+    --red-800: #58151c;
+    --red-900: #2c0b0e;
+
+    --orange-100: #ffe5d0;
+    --orange-200: #fecba1;
+    --orange-300: #feb272;
+    --orange-400: #fd9843;
+    --orange-500: #fd7e14;
+    --orange-600: #ca6510;
+    --orange-700: #984c0c;
+    --orange-800: #653208;
+    --orange-900: #331904;
+
+    --yellow-100: #fff3cd;
+    --yellow-200: #ffe69c;
+    --yellow-300: #ffda6a;
+    --yellow-400: #ffcd39;
+    --yellow-500: #ffc107;
+    --yellow-600: #cc9a06;
+    --yellow-700: #997404;
+    --yellow-800: #664d03;
+    --yellow-900: #332701;
+
+    --green-100: #d1e7dd;
+    --green-200: #a3cfbb;
+    --green-300: #75b798;
+    --green-400: #479f76;
+    --green-500: #198754;
+    --green-600: #146c43;
+    --green-700: #0f5132;
+    --green-800: #0a3622;
+    --green-900: #051b11;
+
+    --teal-100: #d2f4ea;
+    --teal-200: #a6e9d5;
+    --teal-300: #79dfc1;
+    --teal-400: #4dd4ac;
+    --teal-500: #20c997;
+    --teal-600: #1aa179;
+    --teal-700: #13795b;
+    --teal-800: #0d503c;
+    --teal-900: #06281e;
+
+    --cyan-100: #cff4fc;
+    --cyan-200: #9eeaf9;
+    --cyan-300: #6edff6;
+    --cyan-400: #3dd5f3;
+    --cyan-500: #0dcaf0;
+    --cyan-600: #0aa2c0;
+    --cyan-700: #087990;
+    --cyan-800: #055160;
+    --cyan-900: #032830;
+
+    --ontrend-100: #fff4d9;
+    --ontrend-200: #fdd0bb;
+    --ontrend-300: #fea8b3;
+    --ontrend-400: #7dcfe7;
+    --ontrend-500: #0b6655;
+    --ontrend-600: #400c3e;
+    --ontrend-700: #2c4763;
+    --ontrend-800: #1f364d;
+    --ontrend-900: #0e2439;
+
+    --darkBlue: #222c3b;
+    --gold: #fae3c2;
+    --gold2:#e7d9c3;
+
+    --global-font: var(--sans-serif);
+    --drop-shadow: var(--gray-500);
+    --img-border: var(--gray-700);
+}
+/* Desktops */
+@media (min-width: 768px) { body { padding: 0 } }
+	
+/* Mobiles */
+@media (max-width: 767px) { body { padding: 0 } }
+
+.container-menu a:link,
+.container-menu a:visited { color: var(--white-000) }
+.container-menu a#btn-cta:link,
+.container-menu a#btn-cta:visited { background-color: var(--trans-000) }
+.container-menu a#btn-cta:link,
+.container-menu a#btn-cta:visited { border-color: var(--white-000) }
+.container-menu a#btn-cta:focus,
+.container-menu a#btn-cta:hover,
+.container-menu a#btn-cta:active { border-color: var(--gray-800) }
+.container-menu a#btn-cta:focus,
+.container-menu a#btn-cta:hover,
+.container-menu a#btn-cta:active { background-color: var(--trans-000) }
+.container-menu a:focus,
+.container-menu a:hover,
+.container-menu a:active { color: var(--gray-900) }
+.container-menu a#btn-cta:focus,
+.container-menu a#btn-cta:hover,
+.container-menu a#btn-cta:active { color: var(--gray-900) }
+
+
+body { 
+    font-family: 'Karla', sans-serif;
+    /*font-family: 'Shadows Into Light';*/
+    text-align: center;
+    background-image: linear-gradient(90deg,#f4cdca, #f4cdca);
+    color: var(--darkBlue);
+}
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    background-image: linear-gradient(90deg,#f4cdca, #f4cdca);
+}
+
+.icon {
+    margin-top: 1.5%;
+    margin-left: 2%;
+    width: 3%;
+}
+
+.onGoing{
+    margin-top: 200px;
+}
+
+/* ======================= MENUS ========================*/
+
+.container-menu {
+    height: 72px; width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6% 0 0;
+    background-color: var(--gray-300);
+}
+
+/* Website logo */
+.container-menu a:first-child { 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    margin-left: 6%;
+    background-color: transparent;
+}
+
+.container-menu a:first-child img { width: 200px; height: 40px; outline: 0 }
+
+.container-menu a:first-child { background-color: transparent }
+
+/* Menu links */
+.container-menu ul {
+    display: flex;
+    align-items: center;
+    height: auto;
+    list-style-type: none;
+    margin-right: 50px;
+
+}
+
+.container-menu ul li {
+    display: inline-block; 
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.container-menu ul li:last-child { margin-right: 0 }
+
+.container-menu ul li a { 
+    font-size: calc(18px + (20 - 18) * ((100vw - 320px)/(1920 - 320)));
+    font-family: var(--sans-serif);
+    font-weight: 700;
+}
+
+.container-menu a:link,
+.container-menu a:visited { 
+    text-decoration: none;
+    color: white;
+}
+
+.container-menu a:focus,
+.container-menu a:hover,
+.container-menu a:active { 
+    text-decoration: none;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+    color: var(--black-000);
+     transition: all 0.3s linear; 
+    background-color: transparent;
+    transition: .35s ease-in-out;
+}
+
+/* CTA button */
+.container-menu a#btn-cta {
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    font-weight: 700;
+    padding: 10px 24px 12px 24px;
+}
+
+.container-menu a#btn-cta:link, 
+.container-menu a#btn-cta:visited {
+    border: solid 2px white; 
+    color: #fff; 
+    background-color: transparent; 
+} 
+
+.container-menu a#btn-cta:focus, 
+.container-menu a#btn-cta:hover, 
+.container-menu a#btn-cta:active  {
+    border: solid 2px var(--black-000); 
+    background-color: transparent;  
+    color: black;
+}
+
+.container-menu a#btn-cta > *:nth-child(2) { 
+    margin-left: 14px; margin-right: 0
+} 
+
+/* Hamburger icon */
+.container-menu .item-icon {
+    height: 40px;
+    margin-top: 16px;
+}
+
+.container-menu .item-icon .bar1, 
+.container-menu .item-icon .bar2, 
+.container-menu .item-icon .bar3 { 
+    width: 36px; height: 4px; 
+    margin: 7px 0; 
+    transition: 0.4s;
+    background-color: #000;
+}
+
+.change .bar1 { transform: rotate(-45deg) translate(-9px, 6px) }
+.change .bar2 { opacity: 0 }
+.change .bar3 { transform: rotate(45deg) translate(-8px, -8px) }
+
+/* Desktops */
+@media (min-width: 768px) {
+    .container-menu .item-icon {
+        display: none
+    }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+    .container-menu { padding: 0 8% 0 0 }
+
+    .container-menu ul { 
+        position: fixed; 
+        top: 72px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch; /* Safari on mobiles */
+        font-size: calc(17px + (18 - 17) * ((100vw - 320px)/(1920 - 320)));
+        text-align: left;
+        min-width: 100%;
+        max-height: 100%;
+        /* height: 100%; */
+        /* z-index: 999; */
+        background-color: var(--darkBlue);
+        padding: 32px 0 10px 40px;
+    }
+    
+    .container-menu ul {
+        right: -9000px; /* hides flyout menu */
+        display: none;
+    }
+    
+    .container-menu ul.mobile-display {
+        top: 72px;
+        right: 0; 
+        display: block;
+        overscroll-behavior: contain;
+        overscroll-behavior-y: contain;
+        z-index: 9999;
+    }
+
+    .container-menu ul.mobile-display li { 
+        margin-bottom: 36px;
+        display: block;
+    }
+
+    .container-menu ul.mobile-display li a { 
+        display: inline-block;
+        color: var(--gold);
+    }
+
+}
+
+/* On mobiles, prevent scrolling out#fae3c2,#cca9b9side menu */
+.no-scroll { overflow: hidden }
+
+.menu-drop-shadow { 
+    box-shadow: 8px 8px 10px #888 !important;
+}
+
+/* Sticky menu */
+.menu-sticky { position: fixed; top: 0; left: 0; right: 0; z-index: 99999 }
+
+  
+/* ======= MOBILE MENU  ======== */
+
+#fae3c2,#cca9b9
+.flyout-menu.flyout-menu-is-closed {
+    right: -99999px; /* hides flyout menu */
+}
+
+.flyout-menu.flyout-menu-is-open {
+    right: 0; /* displays flyout menu */
+    overscroll-behavior: contain;
+    overscroll-behavior-y: contain
+}
+
+/* =========== FOOTER ===========*/
+
+/* Desktop footer - inside padding  */
+@media (min-width:768px) {
+	footer { padding: 4% 8% 2% 8%;
+            background-color: var(--darkBlue);}
+}
+
+/* Mobiles footer - inside padding */
+@media (max-width:767px) {
+	footer { padding: 8% 8% 6% 8% }
+}

@@ -342,17 +342,16 @@ nav{
 }
 
 .mini{
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .miniProjet{
-    align-items: center;
+    text-align: left;
     color: var(--gold); 
     font-size: large;
     font-weight: 200;
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 100px;
+    width: 70%;
+    margin: 0 20% 100px 20%;
 }
 
 .no_ref{
