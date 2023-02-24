@@ -26,6 +26,16 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">    
     <link rel="manifest" href="assets/img/site.webmanifest">
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdJY64kAAAAAAJ8pj4Zv2jf4MueJIOY8TVCyW9H"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LdJY64kAAAAAAJ8pj4Zv2jf4MueJIOY8TVCyW9H', {action: 'submit'}).then(function (token) {
+                console.info("got token: " + token);
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
+
 </head>
 
 <body>
@@ -48,7 +58,7 @@
     </nav> 
 
     <div class="contact">
-        <form action="https://formspree.io/f/mdobgyqr" method="POST">
+        <form action="https://formspree.io/f/mdobgyqr" action="https://formspree.io/f/6LdJY64kAAAAAAJ8pj4Zv2jf4MueJIOY8TVCyW9H" method="POST">
             <img src="assets/img/pp2.png">
             <h3>Send me an Email</h3>
             <label>Your Name</label>
@@ -60,6 +70,7 @@
             <button type="submit">
                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg> SUBMIT</button>
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response"/>
             </form>
     </div>
     <div class="join">
