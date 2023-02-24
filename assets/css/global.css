@@ -140,6 +140,7 @@ input, button, textarea, select { font: inherit }
 
     --darkBlue: #222c3b;
     --gold: #fae3c2;
+    --gold2:#e7d9c3;
 
     --global-font: var(--sans-serif);
     --drop-shadow: var(--gray-500);
@@ -332,11 +333,26 @@ nav{
 .theme2{
     width: 40px;;
 }
+
 .icon {
     margin-top: 1.5%;
     margin-left: 2%;
     width: 3%;
 
+}
+
+.mini{
+    margin-bottom: 0;
+}
+
+.miniProjet{
+    align-items: center;
+    color: var(--gold); 
+    font-size: large;
+    font-weight: 200;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 100px;
 }
 
 .no_ref{
